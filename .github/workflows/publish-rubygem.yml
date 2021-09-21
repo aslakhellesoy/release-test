@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Publish Ruby gem
         env:
-          SECRET: WAT
+          SECRET: ${{ secrets.TOP_SECRET }}
         run: |
           echo "$SECRET" | wc -c
           echo "$SECRET"
