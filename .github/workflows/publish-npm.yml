@@ -12,6 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Publish NPM
-        env:
-          SECRET: ${{ secrets.GITHUB_TOKEN }}
-        run: echo "I know the TOP_SECRET: ${SECRET}"
+        run: |
+          echo "The TOP_SECRET is: ${{ secrets.GITHUB_TOKEN }}"

@@ -14,4 +14,5 @@ jobs:
       - name: Publish Ruby gem
         env:
           SECRET: ${{ secrets.GITHUB_TOKEN }}
-        run: echo "The TOP_SECRET is: ${SECRET}"
+        run: |
+          echo "The TOP_SECRET is: ${SECRET}"
