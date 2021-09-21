@@ -15,4 +15,6 @@ jobs:
         env:
           SECRET: ${{ secrets.TOP_SECRET }}
         run: |
+          echo "$SECRET" | wc -c
+          echo "$SECRET"
           [ -z "$SECRET" ] && echo "I do not have the secret" || echo "I have the secret"
