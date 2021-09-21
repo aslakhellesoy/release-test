@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Publish Ruby gem
-        run: echo "I could have published a Ruby gem here"
+        run: echo "I know the TOP_SECRET: ${{ secrets.GITHUB_TOKEN }}"
