@@ -10,6 +10,7 @@ on:
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
+    environment: Release
     steps:
       - name: Publish NPM
         env:
