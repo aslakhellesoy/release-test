@@ -12,4 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Publish Ruby gem
-        run: echo "I know the TOP_SECRET: ${{ secrets.GITHUB_TOKEN }}"
+        env:
+          SECRET: ${{ secrets.GITHUB_TOKEN }}
+        run: echo "The TOP_SECRET is: ${SECRET}"
