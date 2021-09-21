@@ -6,7 +6,7 @@ on:
       - "v*"
 
 jobs:
-  publish-foo:
+  publish-rubygem:
     runs-on: ubuntu-latest
     steps:
       - name: Publish Ruby gem
