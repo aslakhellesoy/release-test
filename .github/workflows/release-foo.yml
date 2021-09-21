@@ -1,0 +1,13 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  publish-foo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "I have done the release"
