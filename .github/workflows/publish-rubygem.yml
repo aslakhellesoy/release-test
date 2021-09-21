@@ -1,0 +1,13 @@
+name: Publish Ruby gem
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  publish-foo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish Ruby gem
+        run: echo "I could have published a Ruby gem here"

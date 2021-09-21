@@ -1,0 +1,13 @@
+name: Publish NPM
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  publish-foo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish NPM
+        run: echo "I could have published an NPM module here"
