@@ -13,6 +13,6 @@ jobs:
     steps:
       - name: Publish Ruby gem
         env:
-          SECRET: ${{ secrets.GITHUB_TOKEN }}
+          SECRET: ${{ secrets.TOP_SECRET }}
         run: |
-          echo "The TOP_SECRET is: ${SECRET}"
+          [ -z "$SECRET" ] && echo "I do not have the secret" || echo "I have the secret"
